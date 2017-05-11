@@ -1,8 +1,8 @@
-# Wireshark Protobuf Dissector
+# Wireshark Protobuf Dissector (version for TCP port)
 A Wireshark Lua plugin to decode/dissect Google Protobuf messages
 
 This is a full Wireshark plugin to display [Google Protobuf](https://developers.google.com/protocol-buffers/) message packets, with the following features:
-* **Custom proto file decode**: give it your .proto files, and it will decode them in UDP packets, using their field names, enum values, etc.
+* **Custom proto file decode**: give it your .proto files, and it will decode them in TCP packets, using their field names, enum values, etc.
 * **Generic protobuf decode**: don't give it your .proto files, and it will decode generic protobuf info.
 * **Protobuf v2 support**: supports almost every field type that exists in Protobuf v2. (see Limitations below)
 * **Expert info for missing things**: generates Wireshark expert info if a required field is missing, or if two oneof fields are used, etc.
