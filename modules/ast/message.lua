@@ -172,7 +172,7 @@ function MessageStatement:createProto()
         Prefs:create(self.proto)
 
         -- add it for port 0 so it can be used in "Decode As..."
-        DissectorTable.get("udp.port"):add(0, self.proto)
+        DissectorTable.get("tcp.port"):add(0, self.proto)
     end
 
     return self.proto

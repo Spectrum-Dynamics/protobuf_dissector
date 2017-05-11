@@ -61,7 +61,7 @@ function GenericProto.proto.dissector(tvbuf, pktinfo, root)
 end
 
 
-DissectorTable.get("udp.port"):add(0, GenericProto.proto)
+DissectorTable.get("tcp.port"):add(0, GenericProto.proto)
 
 
 return GenericProto
